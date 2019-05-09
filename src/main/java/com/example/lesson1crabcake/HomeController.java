@@ -13,7 +13,12 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping("/crabbyrecipe")
+    @RequestMapping("/recipe")
+    public String recipe(){
+        return "recipe";
+    }
+
+   @RequestMapping("/crabbyrecipe")
     public String crabbyrecipe() {
         return "crabbyrecipe";
     }
